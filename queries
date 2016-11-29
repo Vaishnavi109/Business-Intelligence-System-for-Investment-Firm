@@ -1,0 +1,25 @@
+CREATE KEYSPACE cmpe274
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+
+
+USE cmpe274;
+
+
+CREATE TABLE share(
+   share_id text PRIMARY KEY,
+   Volume text,
+   Symbol text,
+   Adj_Close text,
+   High text,
+   Low text,
+   Date text,
+   Close text,
+   Open text
+   );
+
+DROP TABLE share;
+
+select COUNT(*) from share;
+
+
+   #{'Volume': '13257200', 'Symbol': 'YHOO', 'Adj_Close': '33.16', 'High': '33.52', 'Low': '32.75', 'Date': '2015-11-25', 'Close': '33.16', 'Open': '32.77'}
