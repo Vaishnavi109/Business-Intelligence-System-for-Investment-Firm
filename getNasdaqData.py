@@ -6,7 +6,7 @@ from datetime import datetime
 import time
 
 try:
-	c=Cluster(['54.191.200.22'],port=9160)  
+	c=Cluster(['54.191.200.22'])  
 	session = c.connect()
 	print 'Able to connect to cassandra'
 
