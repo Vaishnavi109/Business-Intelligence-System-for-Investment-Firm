@@ -1,0 +1,13 @@
+
+
+Important Commands:
+
+Manage Spark :
+
+Start Spark Shell:  ./bin/spark-shell
+
+
+Manage Zeppelin
+
+Start:  bin/zeppelin-daemon.sh start
+Stop:  bin/zeppelin-daemon.sh stop
